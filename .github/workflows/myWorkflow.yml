@@ -19,7 +19,7 @@ jobs:
 
        - name: list of files in the repository   
          run: |
-           echo "The respository ${{gitgub.repository}} contains the following files: " 
+           echo "The respository ${{github.repository}} contains the following files: " 
            tree
   
 
