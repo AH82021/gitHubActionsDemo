@@ -1,0 +1,30 @@
+name: my Work flow
+
+on: 
+  push:
+    branches: 
+      - main 
+  workflow_dispatch:
+
+
+jobs:
+   firstJob:
+
+     runs-on:  ubuntu-latest
+     steps: 
+       - run: echo "👋 Hello wrold from gitHb Actions!"
+
+       - name: Checkout
+         uses: actions/checkout@v4.2.2
+
+       - name: list of files in the repository   
+         run: |
+           echo "The respository ${{gitgub.repository}} contains the following files: " 
+           tree
+  
+
+       
+
+   
+  
+            
